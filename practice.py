@@ -133,5 +133,97 @@ condition
 2. between 4 and 28
 3. print '오프라인 스터디 모임 날짜는 매월 #일로 선정되었습니다.'
 '''
-date = randint(4,28)
+date = randint(4, 28)
 print("오프라인 스터디 모임 날짜는 매월 " + str(date) + " 일로 선정되었습니다.")
+
+# string
+sentence = "I'm a girl"
+print(sentence)
+sentence2 = "Python is easy"
+print(sentence2)
+sentence3 = """
+I'm a girl, and
+Python in easy
+"""
+print(sentence3)
+
+# slicing
+jumin = "990120-1234567"
+print("gender : " + jumin[7])
+print("year : " + jumin[0:2])
+print("month : " + jumin[2:4])
+print("day : " + jumin[4:6])
+print("birth date : " + jumin[:6]) # start from 0
+print("last 7 digits : " + jumin[7:]) # to the last idx
+print("last 7 digits : " + jumin[-7:]) # start from the last idx
+
+# string processing function
+python = "Python is Amazing"
+print(python.lower())
+print(python.upper())
+print(python[0].isupper())
+print(len(python))
+print(python.replace("Python","Java"))
+
+index = python.index("n")
+print(index) # 5
+index = python.index("n", index + 1)
+print(index) # 15
+
+print(python.find("Java")) # -1
+# print(python.index("Java")) # error
+
+print(python.count("n")) # 2 
+
+# string format
+print("a" + "b")
+print("a","b")
+
+# 1
+print("I'm %d years old." % 20)
+print("I like %s" % "python.")
+print("Apple starts with %c." % "A")
+
+# %s
+print("I'm %s years old." % 20)
+print("I like %s and %s colors." % ("blue","red"))
+
+# 2
+print("I'm {} years old.".format(20))
+print("I like {} and {} colors.".format("blue", "red"))
+print("I like {0} and {1} colors.".format("blue", "red"))
+print("I like {1} and {0} colors.".format("blue", "red"))
+
+# 3
+print("I'm {age} years old and I like {color} color.".format(age = 20, color = "red"))
+print("I'm {age} years old and I like {color} color.".format(color = "red", age = 20))
+
+# 4 (v3.6~)
+age = 20 
+color = "red"
+print(f"I'm {age} years old and I like {color} color.") 
+
+# escape character
+# \n 
+print("How are you?\nGood.")
+# \" \'
+print("I'm 'ELLA'.")
+print("I\'m \"ELLA\".")
+print("I\'m \'ELLA\'.")
+# \\
+print("C:\\Users\\ella")
+# \r 
+print("Red Apple\rPine") # PineApple
+# \b : backspace
+print("Redd\bApple") # RedApple
+# \t : tab
+print("Red\tApple") # Red   Apple
+
+# quiz 3
+url = "http://naver.com"
+my_str = url.replace("http://","")
+my_str = my_str[:my_str.index(".")]
+password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
+print("{0}, new password : {1}".format(url, password))
+
+ 
