@@ -1,6 +1,7 @@
 # sixth chapter
 # function
 
+# bank
 def open_account():
     print("New account is created.")
 
