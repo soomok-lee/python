@@ -5,6 +5,7 @@
 print("python", "java", "javascript", sep=",", end="?")
 print("which is more fun?")
 
+# sys 
 import sys
 print("python", "java", file=sys.stdout) # standard out
 print("python", "java", file=sys.stderr) # standard error
