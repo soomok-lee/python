@@ -1,3 +1,6 @@
+# seventh chapter
+# input, output
+
 # sep, end
 print("python", "java", "javascript", sep=",", end="?")
 print("which is more fun?")

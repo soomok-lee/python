@@ -1,3 +1,6 @@
+# fourth chapter
+# control statement
+
 # if
 # weather  ="rain"
 weather = input("how's the weather today?")
