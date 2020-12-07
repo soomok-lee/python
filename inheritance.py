@@ -111,3 +111,32 @@ class FU(U, F):
 
 # dropship : flying unit
 dropship = FU()
+
+# quiz 8
+'''
+real estate program
+
+3 houses
+gangnam apt / 매매 / 10억 / year 2010
+mapo condo / 전세 / 5억 / year 2007 
+songpa villa / 월세 / 500/50 / year 2000
+'''
+class House:
+     def __init__(self, location, house_type, deal_type, price, completion_year):
+         self.location = location
+         self.house_type = house_type
+         self.deal_type = deal_type
+         self.price = price
+         self.completion_year = completion_year
+
+     def show_detail(self):
+         print("{0} {1} {2} {3} {4}".format(self.location, self.house_type, self.deal_type, self.price, self.completion_year))
+
+houses = []
+houses.append(House("gangnam", "apt", "매매", "10억", "2010"))
+houses.append(House("mapo", "condo", "전세", "5억", "2007"))
+houses.append(House("songpa", "villa", "월세", "500/50", "2000"))
+
+print("total {0} houses are on sale.".format(len(houses)))
+for house in houses:
+    house.show_detail()
