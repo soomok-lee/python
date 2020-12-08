@@ -54,4 +54,4 @@ print(datetime.date.today())
 # timedelta : 두 날짜 사이의 간격
 today = datetime.date.today()
 td = datetime.timedelta(days = 100)
-print("today + 100 days : ", today + td)
+print("today + 100 days : ", today + td)  

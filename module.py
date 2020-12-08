@@ -54,3 +54,10 @@ import inspect
 import random
 print(inspect.getfile(random)) # C:\Python39\lib\random.py
 print(inspect.getfile(thailand)) # C:\git\python\travel\thailand.py
+
+# quiz 10
+'''
+my own signature module - byme.py
+'''
+import byme
+byme.sign()
